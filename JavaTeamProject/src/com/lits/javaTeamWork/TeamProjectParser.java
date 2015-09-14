@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.type.TypeFactory;
 
 public class TeamProjectParser {
 	public List<Workers> ParseJsonUsingJackson() throws JsonParseException, JsonMappingException, IOException {
-		InputStream input = new FileInputStream("res/test2JSON.json");
+		InputStream input = new FileInputStream("test2JSON.json");
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 		objectMapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
