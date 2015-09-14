@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employers>
+ <employer id="001">
+    <lastName>Andriy Deneha</lastName>
+    <position>iOS Developer</position>
+    <salary>1000</salary>
+ </employer>
+ <employer id="002">
+    <lastName>AANdriy</lastName>
+    <position>ZEND Administrator</position>
+    <salary>1001</salary>
+ </employer>
+ <employer id="003">
+    <lastName>Viktor Zagniynyy</lastName>
+    <position>QA Engineer</position>
+    <salary>999</salary>
+ </employer>
+ <employer id="004">
+    <lastName>Viktor Zagniynyy</lastName>
+    <position>QA Engineer</position>
+    <salary>1000</salary>
+ </employer>
+ <employer id="005">
+    <lastName>Yuriy Kutelmakh</lastName>
+    <position>Senior QA</position>
+    <salary>2000</salary>
+ </employer>
+ <employer id="006">
+    <lastName>Sofia Hamar</lastName>
+    <position>Senior QA</position>
+    <salary>1999</salary>
+ </employer>
+</employers>
+
