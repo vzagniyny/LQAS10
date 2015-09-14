@@ -1,4 +1,4 @@
-package com.lits.teamWork;
+package com.lits.javaTeamProject;
 
 public class EmployeeList {
 

@@ -1,4 +1,4 @@
-package com.lits.teamWork;
+package com.lits.javaTeamProject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +59,7 @@ public class XMLParser {
 			String position = emp.position;
 			String salary = emp.salary;
 			employeeList.add(new EmployeeList(lastName, position, salary));
+			System.out.println("JsonParser -- " + lastName + "--" + position + "--" + salary);
 		}
 		return employeeList;
 	}
