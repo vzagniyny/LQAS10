@@ -1,0 +1,27 @@
+[
+{
+    "lastName": "Viktor Zagniynyy",
+    "position": "QA Engineer",
+    "salary": "1000"
+},
+{
+    "lastName": "Yuriy Kutelmakh",
+    "position": "senior QA",
+    "salary": "2000"
+},
+{
+    "lastName": "Viktor Moroz",
+    "position": "QA Engineer2",
+    "salary": "1500"
+},
+{
+    "lastName": "",
+    "position": "QA1",
+    "salary": "4000"
+},
+{
+    "lastName": "Olexiy",
+    "position": "QA1",
+    "salary": "3000"
+}
+]

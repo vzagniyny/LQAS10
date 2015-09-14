@@ -1,0 +1,27 @@
+[
+{
+    "lastName": "Book1",
+    "position": "QA",
+    "salary": "1000"
+},
+{
+    "lastName": "Book1",
+    "position": "QA2",
+    "salary": "2000"
+},
+{
+    "lastName": "Book2",
+    "position": "QA2",
+    "salary": "3000"
+},
+{
+    "lastName": "Book2",
+    "position": "QA1",
+    "salary": "4000"
+},
+{
+    "lastName": "Book3",
+    "position": "QA1",
+    "salary": "3000"
+}
+]
