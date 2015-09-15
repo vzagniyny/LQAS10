@@ -3,7 +3,7 @@
 <suite name="Testing" verbose="2" data-provider-thread-count="3" allow-return-values = "true">
 	<test name="TestingJacksonParser">
 		<classes>
-			<class name="com.lits.javaTeamProject.TeamProjectParser" />
+			<class name="com.lits.javaTeamProject.parcer.JsonParser" />
 		</classes>
 	</test>
 </suite>
