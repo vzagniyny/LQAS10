@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Testing" duration-ms="40" started-at="2015-09-14T21:53:33Z" finished-at="2015-09-14T21:53:33Z">
+  <suite name="Testing" duration-ms="39" started-at="2015-09-15T09:51:27Z" finished-at="2015-09-15T09:51:27Z">
     <groups>
     </groups>
-    <test name="TestingTest" duration-ms="40" started-at="2015-09-14T21:53:33Z" finished-at="2015-09-14T21:53:33Z">
+    <test name="TestingTest" duration-ms="39" started-at="2015-09-15T09:51:27Z" finished-at="2015-09-15T09:51:27Z">
       <class name="com.lits.javaTeamProject.XMLParser">
-        <test-method status="PASS" signature="ParseXML()[pri:0, instance:com.lits.javaTeamProject.XMLParser@25618e91]" name="ParseXML" duration-ms="24" started-at="2015-09-15T00:53:33Z" finished-at="2015-09-15T00:53:33Z">
+        <test-method status="PASS" signature="ParseXML()[pri:0, instance:com.lits.javaTeamProject.XMLParser@5474c6c]" name="ParseXML" duration-ms="22" started-at="2015-09-15T12:51:27Z" finished-at="2015-09-15T12:51:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ParseXML -->

@@ -1,4 +1,4 @@
-package com.lits.javaTeamWork;
+package com.lits.javaTeamProject;
 
 public class Workers {
 	private String lastName;

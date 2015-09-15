@@ -15,7 +15,7 @@ import org.w3c.dom.NodeList;
 public class XMLParser {
 
 	@Test
-	public List<EmployeeList> ParseXML() throws Exception {
+	public List<Workers> ParseXML() throws Exception {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		Document document = builder.parse(ClassLoader.getSystemResourceAsStream("Untitled.xml"));
@@ -53,15 +53,15 @@ public class XMLParser {
 			}
 		}
 
-		List<EmployeeList> employeeList = new ArrayList<>();
+		List<Workers> workersList = new ArrayList<>();
 		for (Employee emp : empList) {
 			String lastName = emp.lastName;
 			String position = emp.position;
 			String salary = emp.salary;
-			employeeList.add(new EmployeeList(lastName, position, salary));
-			System.out.println("JsonParser -- " + lastName + "--" + position + "--" + salary);
+			workersList.add(new Workers(lastName, position, salary));
+			System.out.println("XMLParser -- " + lastName + "--" + position + "--" + salary);
 		}
-		return employeeList;
+		return workersList;
 	}
 }
 

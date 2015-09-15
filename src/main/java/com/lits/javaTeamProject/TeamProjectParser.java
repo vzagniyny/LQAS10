@@ -1,10 +1,12 @@
-package com.lits.javaTeamWork;
+package com.lits.javaTeamProject;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -13,9 +15,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 
 public class TeamProjectParser {
-	//@Test
+	@Test
 	public List<Workers> ParseJsonUsingJackson() throws JsonParseException, JsonMappingException, IOException {
-		InputStream input = new FileInputStream("test2JSON.json");
+		InputStream input = new FileInputStream("res/test2JSON.json");
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 		objectMapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);

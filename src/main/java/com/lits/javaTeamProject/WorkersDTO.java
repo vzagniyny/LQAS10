@@ -1,4 +1,4 @@
-package com.lits.javaTeamWork;
+package com.lits.javaTeamProject;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
