@@ -36,7 +36,7 @@ public class Main {
         System.out.println("----------XML Parser----------");
         XMLParser xmlParser = new XMLParser();
         List<EmployeeDTO> someData3 = xmlParser.ParseXML();
-        System.out.println("----------Sorted JSON Jackson Parser Data----------");
+        System.out.println("----------Sorted XML Parser Data----------");
         Collections.sort(someData3, new EmployeeComparator());
 
         for (EmployeeDTO employer : someData3) {

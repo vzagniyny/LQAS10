@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Testing" duration-ms="39" started-at="2015-09-15T09:51:27Z" finished-at="2015-09-15T09:51:27Z">
+  <suite name="Testing" duration-ms="236" started-at="2015-09-17T13:32:01Z" finished-at="2015-09-17T13:32:01Z">
     <groups>
     </groups>
-    <test name="TestingTest" duration-ms="39" started-at="2015-09-15T09:51:27Z" finished-at="2015-09-15T09:51:27Z">
-      <class name="com.lits.javaTeamProject.XMLParser">
-        <test-method status="PASS" signature="ParseXML()[pri:0, instance:com.lits.javaTeamProject.XMLParser@5474c6c]" name="ParseXML" duration-ms="22" started-at="2015-09-15T12:51:27Z" finished-at="2015-09-15T12:51:27Z">
+    <test name="TestingJacksonParser" duration-ms="236" started-at="2015-09-17T13:32:01Z" finished-at="2015-09-17T13:32:01Z">
+      <class name="com.lits.javaTeamProject.parcer.JsonParser">
+        <test-method status="PASS" signature="ParseJsonUsingJackson()[pri:0, instance:com.lits.javaTeamProject.parcer.JsonParser@34033bd0]" name="ParseJsonUsingJackson" duration-ms="222" started-at="2015-09-17T16:32:01Z" finished-at="2015-09-17T16:32:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ParseXML -->
-      </class> <!-- com.lits.javaTeamProject.XMLParser -->
-    </test> <!-- TestingTest -->
+        </test-method> <!-- ParseJsonUsingJackson -->
+      </class> <!-- com.lits.javaTeamProject.parcer.JsonParser -->
+    </test> <!-- TestingJacksonParser -->
   </suite> <!-- Testing -->
 </testng-results>
