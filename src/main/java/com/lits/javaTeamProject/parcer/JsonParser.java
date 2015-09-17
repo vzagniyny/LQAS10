@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
-import com.lits.javaTeamProject.dto.Employee;
 import com.lits.javaTeamProject.dto.EmployeeDTO;
 import org.testng.annotations.Test;
 
@@ -17,16 +16,16 @@ import java.util.List;
 
 public class JsonParser {
     @Test
-    public List<Employee> ParseJsonUsingJackson() throws JsonParseException, JsonMappingException, IOException {
+    public List<EmployeeDTO> ParseJsonUsingJackson() throws JsonParseException, JsonMappingException, IOException {
 
-        InputStream input = new FileInputStream("res/test2JSON.json");
+        InputStream input = new FileInputStream("resources/test2JSON.json");
 
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         objectMapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
         TypeFactory typeFactory = TypeFactory.defaultInstance();
 
-        List<Employee> employeeList = new ArrayList<>();
+        List<EmployeeDTO> employeeList = new ArrayList<>();
         List<EmployeeDTO> workers = objectMapper.readValue(input,
                 typeFactory.constructCollectionType(ArrayList.class, EmployeeDTO.class));
 
@@ -35,7 +34,7 @@ public class JsonParser {
             String position = workers.get(i).getPosition();
             String salary = workers.get(i).getSalary();
 
-            employeeList.add(new Employee(lastName, position, salary));
+            employeeList.add(new EmployeeDTO(lastName, position, salary));
             // for test purposes
             System.out.println("JacksonParserOutput: -- " + lastName + "--" + position + "--" + salary);
         }

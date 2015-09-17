@@ -6,6 +6,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import com.lits.javaTeamProject.dto.EmployeeDTO;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.util.ArrayList;
@@ -14,7 +16,7 @@ import java.util.List;
 public class XMLParser {
 
     @Test
-    public List<com.lits.javaTeamProject.dto.Employee> ParseXML() throws Exception {
+    public List<EmployeeDTO> ParseXML() throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document document = builder.parse(ClassLoader.getSystemResourceAsStream("Untitled.xml"));
@@ -52,12 +54,12 @@ public class XMLParser {
             }
         }
 
-        List<com.lits.javaTeamProject.dto.Employee> employeeList = new ArrayList<>();
+        List<EmployeeDTO> employeeList = new ArrayList<>();
         for (Employee emp : empList) {
             String lastName = emp.lastName;
             String position = emp.position;
             String salary = emp.salary;
-            employeeList.add(new com.lits.javaTeamProject.dto.Employee(lastName, position, salary));
+            employeeList.add(new EmployeeDTO(lastName, position, salary));
             System.out.println("XMLParser -- " + lastName + "--" + position + "--" + salary);
         }
         return employeeList;

@@ -7,9 +7,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class EmployeeDTO {
 
-	private final String lastName;
-	private final String position;
-	private final String salary;
+	private String lastName;
+	private String position;
+	private String salary;
 
 	@JsonCreator
 	public EmployeeDTO(@JsonProperty("lastName") String lastName, @JsonProperty("position") String position,
