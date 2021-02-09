@@ -27,8 +27,8 @@
                 <artifactId>soapui-maven-plugin</artifactId>
                 <version>5.5.0</version>
 				<configuration>
-                    <projectFile>Lifestream-Simulation-soapui-project.xml</projectFile>
-					<testSuite>Lifestream Simulation</testSuite>
+                    <projectFile>test-soapui-project.xml</projectFile>
+					
 					<junitReport>true</junitReport>
 					<printReport>true</printReport>
 					<outputFolder>${project.build.directory}/allure-results</outputFolder>
